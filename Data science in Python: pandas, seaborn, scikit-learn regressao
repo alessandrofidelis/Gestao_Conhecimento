@@ -1,11 +1,10 @@
 # conventional way to import pandas
 import pandas as pd
 # read CSV file from the 'data' subdirectory using a relative path
-data = pd.read_csv('data/Advertising.csv', index_col=0)
+data = pd.read_csv('Advertising.csv')
 
 # display the first 5 rows
 data.head()
-In [4]:
 # display the last 5 rows
 data.tail()
 # check the shape of the DataFrame (rows, columns)
@@ -123,4 +122,3 @@ def css_styling():
     styles = open("styles/custom.css", "r").read()
     return HTML(styles)
 css_styling()
-
